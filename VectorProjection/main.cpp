@@ -47,7 +47,6 @@ int main() {
         double uTv, vTv;
         std::tie(uTv,vTv) = innerproducts(u,v);
         double c = (uTv/vTv);
-        //std::vector<double> projUV;
         std::cout << "Projection of U onto V is: \n";
         for (int i = 0; i < std::size(v); i++) {
             std::cout << std::setprecision(15) << c*v[i] << "\n";
